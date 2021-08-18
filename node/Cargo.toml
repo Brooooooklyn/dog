@@ -1,0 +1,18 @@
+[package]
+authors = ["LongYinan <lynweklm@gmail.com>"]
+edition = "2018"
+name = "napi-dog"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+napi = "1"
+napi-derive = "1"
+
+[target.'cfg(all(not(target_env = "musl"), not(target_os = "android"), not(all(target_os = "windows", target_arch = "aarch64"))))'.dependencies]
+mimalloc = {version = "0.1"}
+
+[build-dependencies]
+napi-build = "1"
