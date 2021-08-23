@@ -8,6 +8,7 @@ version = "0.1.0"
 crate-type = ["cdylib"]
 
 [dependencies]
+dog = {path = "../cli"}
 napi = "1"
 napi-derive = "1"
 
