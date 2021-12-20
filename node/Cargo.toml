@@ -9,7 +9,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 napi = "2"
-napi-derive = "1"
+napi-derive = "2"
 
 [target.'cfg(all(not(target_env = "musl"), not(target_os = "android"), not(all(target_os = "windows", target_arch = "aarch64"))))'.dependencies]
 mimalloc = {version = "0.1"}
