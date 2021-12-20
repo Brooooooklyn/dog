@@ -8,7 +8,7 @@ version = "0.1.0"
 crate-type = ["cdylib"]
 
 [dependencies]
-napi = "1"
+napi = "2"
 napi-derive = "1"
 
 [target.'cfg(all(not(target_env = "musl"), not(target_os = "android"), not(all(target_os = "windows", target_arch = "aarch64"))))'.dependencies]
